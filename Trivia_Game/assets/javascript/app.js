@@ -32,7 +32,7 @@ var correctAnswers = [
     "D. Isabelle Brasseur"
 ];
 var questionCounter = 0;
-var selecterAnswer;
+var selectedAnswer;
 var theClock;
 var correctTally = 0;
 var incorrectTally = 0;
