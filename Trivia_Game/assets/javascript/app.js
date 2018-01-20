@@ -52,7 +52,7 @@ $(document).ready(function () {
 
     initialScreen();
 
-
+    
     $("body").on("click", ".start-button", function (event) {
         event.preventDefault();
         generateHTML();
@@ -90,7 +90,7 @@ function generateLossDueToTimeOut() {
 
 function generateWin() {
     correctTally++;
-    gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>Correct! The answer is: " + correctAnswers[questionCounter] + "</p>" + "img class='center-block img-correct' src='assets/images/correct.jpg'>";
+    gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>Correct! The answer is: " + correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-correct' src='assets/images/correct.jpg'>";
     $(".mainArea").html(gameHTML);
     setTimeout(wait, 4000);
 }
